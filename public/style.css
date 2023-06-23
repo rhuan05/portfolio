@@ -35,18 +35,19 @@ body{
     flex-direction: column;
     list-style: none;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
 .languages_list li{
-    height: 50px;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 20px;
 }
 
 .languages_list li:hover{
@@ -58,18 +59,17 @@ main{
 }
 
 .apresentation_texts{
-    width: 630px;
+    width: 540px;
     margin: auto;
-    margin-top: 170px;
-    font-size: 50px;
-    line-height: 90px;
-    font-weight: 400;
+    margin-top: 140px;
+    font-size: 40px;
+    line-height: 70px;
 }
 
 .apresentation_texts h3{
     margin-top: -15px;
     font-weight: 200;
-    font-size: 44px;
+    font-size: 38px;
 }
 
 footer{
@@ -110,64 +110,77 @@ footer{
 
 @media(max-width: 940px){
     .apresentation_texts{
-        font-size: 40px;
-        line-height: 80px;
-        width: 520px;
-        margin-top: 190px;
+        width: 460px;
+        margin-top: 160px;
+        font-size: 34px;
+        line-height: 60px;
     }
 
     .apresentation_texts h3 {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .info nav button {
+        font-size: 12px;
+    }
+
+    .languages_list li {
+        font-size: 18px;
+    }   
+    
+    .languages {
+        border-radius: 15px;
+        width: 60px;
     }
 }
 
 @media(max-width: 710px){
     .apresentation_texts{
-        font-size: 36px;
-        line-height: 70px;
-        width: 460px;
-        margin-top: 220px;
+        width: 400px;
+        margin-top: 170px;
+        font-size: 30px;
+        line-height: 52px;
     }
 
     .apresentation_texts h3 {
-        font-size: 32px;
+        font-size: 28px;
+        margin-top: -10px;
+    }
+
+    .info nav button {
+        font-size: 10px;
+    }
+
+    .languages_list li {
+        font-size: 16px;
+    }   
+    
+    .languages {
+        border-radius: 15px;
+        width: 60px;
     }
 }
 
 @media(max-width: 580px){
     .apresentation_texts{
-        font-size: 32px;
-        line-height: 60px;
-        width: 420px;
-        margin-top: 240px;
+        width: 370px;
+        margin-top: 180px;
+        font-size: 28px;
+        line-height: 48px;
     }
 
     .apresentation_texts h3 {
-        font-size: 29px;
-    }
-
-    .languages_list li {
-        font-size: 18px;
-    }
-
-    .languages {
-        right: 40px;
-        border-radius: 16px;
-        width: 60px;
-        height: 50px;
-    }
-
-    .languages_list {
-        border-radius: 16px;
+        font-size: 26px;
+        margin-top: -5px;
     }
 }
 
 @media(max-width: 480px){
     .apresentation_texts{
-        font-size: 28px;
-        line-height: 50px;
-        width: 360px;
-        margin-top: 270px;
+        font-size: 24px;
+        line-height: 44px;
+        width: 356px;
+        margin-top: 200px;
     }
 
     .apresentation_texts h3 {
@@ -175,81 +188,49 @@ footer{
         margin-top: -6px;
     }
 
-    .info nav {
-        gap: 10px;
-        border-radius: 50px;
-        padding: 20px;
-    }
-
     .info nav button {
-        padding: 6px 14px;
-        border-radius: 30px;
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 
 @media(max-width: 430px){
     .apresentation_texts{
-        font-size: 26px;
-        line-height: 50px;
-        width: 330px;
-        margin-top: 280px;
+        width: 320px;
+        margin-top: 210px;
+        font-size: 22px;
+        line-height: 36px;
     }
 
     .apresentation_texts h3 {
-        font-size: 23px;
-        margin-top: -9px;
-    }
-
-    .info nav button {
-        padding: 6px 14px;
-        border-radius: 30px;
-        font-size: 11px;
+        font-size: 22px;
+        margin-top: -5px;
     }
 }
 
 @media(max-width: 390px){
     .apresentation_texts{
-        font-size: 24px;
-        line-height: 44px;
-        width: 300px;
-        margin-top: 290px;
+        width: 290px;
+        margin-top: 210px;
+        font-size: 20px;
+        line-height: 36px;
     }
 
     .apresentation_texts h3 {
-        font-size: 21px;
-        margin-top: -9px;
-    }
-
-    .languages_list li {
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: -5px;
     }
 }
 
 @media(max-width: 365px){
     .apresentation_texts{
+        width: 290px;
+        margin-top: 210px;
         font-size: 20px;
-        line-height: 38px;
-        width: 260px;
-        margin-top: 300px;
+        line-height: 36px;
     }
 
     .apresentation_texts h3 {
-        font-size: 18px;
-    }
-
-    .info nav button {
-        padding: 6px 10px;
-        border-radius: 30px;
-        font-size: 11px;
-    }
-
-    .info nav{
-        border-radius: 50px;
-        padding: 20px 14px;
-    }
-
-    .languages_list li {
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: -5px;
     }
 }
