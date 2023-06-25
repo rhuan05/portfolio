@@ -223,14 +223,25 @@ footer{
 
 @media(max-width: 365px){
     .apresentation_texts{
-        width: 290px;
+        width: 260px;
         margin-top: 210px;
         font-size: 20px;
         line-height: 36px;
     }
 
     .apresentation_texts h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: -5px;
     }
+
+    .info nav {
+        width: 240px;
+        gap: 8px;
+        padding: 20px 5px;
+    }
+
+    .info nav button {
+        font-size: 8px;
+    }
 }
+
