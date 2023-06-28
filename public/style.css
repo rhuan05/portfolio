@@ -14,6 +14,7 @@
     border-radius: 100px;
     position: absolute;
     top: 0px;
+    z-index: -100;
 }
 
 body.open_options_languages .languages{
