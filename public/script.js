@@ -48,3 +48,11 @@ function changeForEnglish(){
     document.querySelector('#myProjects_btn').innerHTML = projetosBtnEnglish;
     document.querySelector('#contacts').innerHTML = contatoBtnEnglish;
 };
+
+
+//Funcionalidade do cursor acompanhar o mouse
+let cursorCircle = document.querySelector('.cursorCircle');
+
+document.addEventListener('mousemove', (e)=>{
+    cursorCircle.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
+});
