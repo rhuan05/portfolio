@@ -7,8 +7,18 @@
     font-family: 'Poppins', 'Segoe UI';
 }
 
+.cursor{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    transform: translate(10px, 100px);
+}
+
 body.open_options_languages .languages{
-    height: 100px;
+    height: 150px;
 }
 
 body{
