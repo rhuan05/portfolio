@@ -56,3 +56,40 @@ let cursorCircle = document.querySelector('.cursorCircle');
 document.addEventListener('mousemove', (e)=>{
     cursorCircle.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
 });
+
+//Sobre mim
+let aboutMe_btn = document.querySelector('#aboutMe_btn');
+
+aboutMe_btn.addEventListener('click', ()=>{
+    document.querySelector('.main__aboutme').style.top = '0vh'
+
+    setTimeout(()=>{
+        document.querySelector('.sobremim__title').style.transform = 'translateX(0px)';
+    }, 1000);
+});
+
+document.querySelector('.x_iconaboutme').addEventListener('click', ()=>{
+    document.querySelector('.main__aboutme').style.top = '100vh'
+});
+
+//Meus projetos
+let myProjects_btn = document.querySelector('#myProjects_btn');
+
+myProjects_btn.addEventListener('click', ()=>{
+    document.querySelector('.main__myProjects').style.top = '0vh'
+});
+
+document.querySelector('.x_iconmyprojects').addEventListener('click', ()=>{
+    document.querySelector('.main__myProjects').style.top = '100vh'
+});
+
+//Contato
+let contacts = document.querySelector('#contacts');
+
+contacts.addEventListener('click', ()=>{
+    document.querySelector('.main__contact').style.top = '0vh'
+});
+
+document.querySelector('.x_iconcontact').addEventListener('click', ()=>{
+    document.querySelector('.main__contact').style.top = '100vh'
+});

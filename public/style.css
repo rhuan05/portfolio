@@ -262,3 +262,99 @@ footer{
     }
 }
 
+/* Sobre mim */
+
+.main__aboutme{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: white;
+    top: 100vh;
+    transition: .8s;
+}
+
+.x_iconaboutme{
+    color: black;
+    float: right;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sobremim__title{
+    color: black;
+    margin: 30px 20px;
+    transform: translateX(-200px);
+    transition: .5s;
+}
+
+.aboutme__text{
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+/* Projetos */
+
+.main__myProjects{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: white;
+    top: 100vh;
+    transition: .8s;
+}
+
+.x_iconmyprojects{
+    color: black;
+    float: right;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.myProjects__title{
+    color: black;
+    margin: 30px 20px;
+    /* transform: translateX(-200px); */
+}
+
+.myProjects__text{
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+/* Contato */
+
+.main__contact{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: white;
+    top: 100vh;
+    transition: .8s;
+}
+
+.x_iconcontact{
+    color: black;
+    float: right;
+    margin-right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact__title{
+    color: black;
+    margin: 30px 20px;
+    /* transform: translateX(-200px); */
+}
+
+.contact__text{
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+}
