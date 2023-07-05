@@ -77,6 +77,10 @@ let myProjects_btn = document.querySelector('#myProjects_btn');
 
 myProjects_btn.addEventListener('click', ()=>{
     document.querySelector('.main__myProjects').style.top = '0vh'
+
+    setTimeout(()=>{
+        document.querySelector('.myProjects__title').style.transform = 'translateX(0px)';
+    }, 1000);
 });
 
 document.querySelector('.x_iconmyprojects').addEventListener('click', ()=>{
@@ -88,6 +92,10 @@ let contacts = document.querySelector('#contacts');
 
 contacts.addEventListener('click', ()=>{
     document.querySelector('.main__contact').style.top = '0vh'
+
+    setTimeout(()=>{
+        document.querySelector('.contact__title').style.transform = 'translateX(0px)';
+    }, 1000);
 });
 
 document.querySelector('.x_iconcontact').addEventListener('click', ()=>{
