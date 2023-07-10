@@ -70,6 +70,7 @@ aboutMe_btn.addEventListener('click', ()=>{
 
 document.querySelector('.x_iconaboutme').addEventListener('click', ()=>{
     document.querySelector('.main__aboutme').style.top = '100vh'
+    document.querySelector('.sobremim__title').style.transform = 'translateX(-200px)'
 });
 
 //Meus projetos
@@ -85,6 +86,7 @@ myProjects_btn.addEventListener('click', ()=>{
 
 document.querySelector('.x_iconmyprojects').addEventListener('click', ()=>{
     document.querySelector('.main__myProjects').style.top = '100vh'
+    document.querySelector('.myProjects__title').style.transform = 'translateX(-200px)'
 });
 
 //Contato
@@ -100,4 +102,5 @@ contacts.addEventListener('click', ()=>{
 
 document.querySelector('.x_iconcontact').addEventListener('click', ()=>{
     document.querySelector('.main__contact').style.top = '100vh'
+    document.querySelector('.contact__title').style.transform = 'translateX(-200px)'
 });
