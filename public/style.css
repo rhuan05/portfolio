@@ -24,6 +24,7 @@ body.open_options_languages .languages{
 body{
     background: #2A2A2A;
     overflow: hidden;
+    margin-top: 0px;
 }
 
 .languages{
