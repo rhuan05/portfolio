@@ -19,8 +19,8 @@ exports.email_enviado = (req, res)=>{
     transporter.sendMail({
         from: 'rhuan.workana@gmail.com',
         to: 'rhuanhenrique964@gmail.com',
-        subject: 'Título do e-mail',
-        text: 'Texto do e-mail'
+        subject: 'E-mail do portfólio',
+        text: infos.text__area
     }).then(message => {
         console.log('E-mail enviado!: ' + message);
     }).catch(err => {
