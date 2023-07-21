@@ -92,17 +92,18 @@
         </div>
     </section>
 
-    <section class="main__contact">
+    <section class="main__contact" <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %> style="top: 0vh;" <% } %>>
         <div class="myContact__container">
             <i class="fa-solid fa-circle-xmark x_iconcontact"></i>
             <h2 class="contact__title">Contacts</h2>
             <div class="contact__container">
                 <div class="contact__content">
                     <form  action="/email_enviado" method="post" class="form__contact">
-                        <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome"  />
                         <input type="email" name="email" id="email" placeholder="Seu e-mail" />
                         <textarea name="text__area" id="text__area" cols="30" rows="10" placeholder="Mensagem"></textarea>
                         <button>Enviar</button>
+                        <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %><p class="campo__erro_contato">Preencha todos os campos!</p><% } %>
                     </form>
                 </div>
             </div>

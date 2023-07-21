@@ -460,3 +460,8 @@ footer{
     font-weight: 600;
     font-size: 14px;
 }
+
+.campo__erro_contato{
+    color: black;
+    text-align: center;
+}

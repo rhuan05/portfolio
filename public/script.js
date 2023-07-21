@@ -100,6 +100,15 @@ contacts.addEventListener('click', ()=>{
     }, 1000);
 });
 
+let main__contact = document.querySelector('.main__contact');
+
+if(main__contact.style.top == '0vh'){
+    setTimeout(()=>{
+        document.querySelector('.contact__title').style.transform = 'translateX(0px)';
+    }, 1000);
+};
+
+
 document.querySelector('.x_iconcontact').addEventListener('click', ()=>{
     document.querySelector('.main__contact').style.top = '100vh'
     document.querySelector('.contact__title').style.transform = 'translateX(-200px)'
