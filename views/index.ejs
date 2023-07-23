@@ -55,7 +55,7 @@
         <div class="myProjects__container">
             <i class="fa-solid fa-circle-xmark x_iconmyprojects"></i>
             <div class="myProjects__content">
-                <h2 class="myProjects__title">Meus projetos</h2>
+                <h2 class="myProjects__title">My projects</h2>
 
                 <div class="projects__container">
                     <div class="project__content">
@@ -99,11 +99,11 @@
             <div class="contact__container">
                 <div class="contact__content">
                     <form  action="/email_enviado" method="post" class="form__contact">
-                        <input type="text" name="nome" id="nome" placeholder="Seu nome"  />
-                        <input type="email" name="email" id="email" placeholder="Seu e-mail" />
-                        <textarea name="text__area" id="text__area" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                        <button>Enviar</button>
-                        <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %><p class="campo__erro_contato">Preencha todos os campos!</p><% } %>
+                        <input type="text" name="nome" id="nome" placeholder="Your name"  />
+                        <input type="email" name="email" id="email" placeholder="Your e-mail" />
+                        <textarea name="text__area" id="text__area" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="btnEnviar">Send</button>
+                        <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %><p class="campo__erro_contato">Fill in all fields</p><% } %>
                     </form>
                 </div>
             </div>

@@ -462,6 +462,8 @@ footer{
 }
 
 .campo__erro_contato{
-    color: black;
+    color: red;
+    margin-top: 6px;
+    font-size: 20px;
     text-align: center;
 }
