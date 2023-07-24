@@ -341,7 +341,7 @@ footer{
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 10px;
     height: 100px;
@@ -362,6 +362,12 @@ footer{
     border-radius: 10px;
 }
 
+.paragraths__project{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .imgtitle__text, .imgproject__text{
     color: black;
 }
@@ -372,7 +378,13 @@ footer{
 
 .imgproject__text{
     font-size: 10px;
-    width: 60%;
+    width: 100%;
+}
+
+.tech__project{
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(96, 96, 96);
 }
 
 .projects__container::-webkit-scrollbar {
