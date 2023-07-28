@@ -150,6 +150,9 @@ footer{
         border-radius: 15px;
         width: 60px;
     }
+    .cursorCircle{
+        display: none;
+    }
 }
 
 @media(max-width: 710px){
