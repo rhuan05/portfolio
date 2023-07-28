@@ -45,7 +45,7 @@
         <div class="aboutme__container">
             <i class="fa-solid fa-circle-xmark x_iconaboutme"></i>
             <div class="aboutme__content">
-                <h2 class="sobremim__title">Sobre mim</h2>
+                <h2 class="sobremim__title">About me</h2>
                 <p class="aboutme__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente consequatur perferendis dolores quod sunt eveniet aspernatur nulla, pariatur corrupti dolorem repellat deleniti harum magni nam autem consequuntur commodi animi esse, nisi architecto labore libero illo non. Eaque explicabo nesciunt, ut voluptates illum iste! Aspernatur nihil hic quo perspiciatis sunt!</p>
             </div>
         </div>
@@ -58,36 +58,39 @@
                 <h2 class="myProjects__title">My projects</h2>
 
                 <div class="projects__container">
-                    <a href="https://celadon-hotteok-9f0fb5.netlify.app/" class="project__content">
-                        <div class="img_projeto">
-                            <img src="images/pagina_de_vendas.jpg" alt="" />
-                        </div>
-                        <h2 class="imgtitle__text" id="h1_ebook_project">Página de vendas para lançamento</h2>
-                        <div class="paragraths__project">
-                            <p class="imgproject__text" id="p1_about_ebook_project">Essa página foi criada com o objetivo de promover um e-book. Onde aconteceria uma campanha, rodando tráfego pago no Facebook ADS apontando para essa página.</p>
-                            <p class="tech__project" id="p2_tech_ebook_project">Tecnologias usadas: HTML, CSS e JavaScript</p>
-                        </div>
-                    </a>
-                    <a href="https://jf-construcoes.onrender.com/" class="project__content">
-                        <div class="img_projeto">
-                            <img src="images/jf_construcoes.jpg" alt="" />
-                        </div>
-                        <h2 class="imgtitle__text" id="h1_eccomerce_project">E-commerce com paínel de admin</h2>
-                        <div class="paragraths__project">
-                            <p class="imgproject__text" id="p1_about_ecomerce_project">Um e-commerce onde o proprietário da loja (jf-construções) consegue criar promoções, produtos e adicionar novidades da loja pelo banner principal.</p>
-                            <p class="tech__project" id="p2_tech_ecommerce_project">Tecnologias usadas: HTML, CSS, JavaScript, NodeJS, MongoDB e Cloudinary (que não é uma tecnologia mas foi usado para o armazenamento de imagens na nuvem).</p>
-                        </div>
-                    </a>
-                    <a href="https://chat-interativo-1.onrender.com/" class="project__content">
-                        <div class="img_projeto">
-                            <img src="images/chat_interativo.jpg" alt="" />
-                        </div>
-                        <h2 class="imgtitle__text" id="h1_chat_project">Chat interativo</h2>
-                        <div class="paragraths__project">
-                            <p class="imgproject__text" id="p1_about_chat_project">Um chat (igual ao whatsapp mesmo!) que facilita a conversa em tempo real entre duas ou mais pessoas.</p>
-                            <p class="tech__project" id="p2_tech_chat_project">Tecnologias usadas: HTML, CSS, JavaScript, NodeJS e Socket.io</p>
-                        </div>
-                    </a>
+                    <div class="sroll_for_phone">
+                        <a href="https://celadon-hotteok-9f0fb5.netlify.app/" class="project__content" class="app_flex">
+                            <div class="img_projeto">
+                                <img src="images/pagina_de_vendas.jpg" alt="" />
+                            </div>
+                            <div class="paragraths__project">
+                                <p class="imgproject__text" id="p1_about_ebook_project">This page was created with the aim of promoting an e-book. Where a campaign would take place, running paid traffic on Facebook ADS pointing to that page.</p>
+                                <p class="tech__project" id="p2_tech_ebook_project">Technologies used: HTML, CSS and JavaScript</p>
+                            </div>
+                        </a>
+                        <a href="https://jf-construcoes.onrender.com/" class="project__content" class="app_flex">
+                            <div class="img_projeto">
+                                <img src="images/jf_construcoes.jpg" alt="" />
+                            </div>
+                            <div class="paragraths__project">
+                                <p class="imgproject__text" id="p1_about_ecomerce_project">An e-commerce where the store owner (jf-construções) can create promotions, products and add store news through the main banner.</p>
+                                <p class="tech__project" id="p2_tech_ecommerce_project">Technologies used: HTML, CSS, JavaScript, NodeJS, MongoDB and Cloudinary (which is not a technology but was used for storing images in the cloud).</p>
+                            </div>
+                        </a>
+                        <a href="https://chat-interativo-1.onrender.com/" class="project__content">
+                            <div class="img_projeto" id="imgChat_interativo">
+                                <img src="images/chat_interativo.jpg" alt="" />
+                            </div>
+                            <div class="paragraths__project">
+                                <p class="imgproject__text" id="p1_about_chat_project">A chat (just like whatsapp!) that facilitates real-time conversation between two or more people.</p>
+                                <p class="tech__project" id="p2_tech_chat_project">Technologies used: HTML, CSS, JavaScript, NodeJS and Socket.io</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="arrows_phone">
+                        <i class="fa-solid fa-circle-chevron-down" id="arrow_left" style="color: #000000;"></i>
+                        <i class="fa-solid fa-circle-chevron-down" id="arrow_right" style="color: #000000;"></i>
+                    </div>
                 </div>
                 
             </div>
@@ -97,7 +100,7 @@
     <section class="main__contact" <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %> style="top: 0vh;" <% } %>>
         <div class="myContact__container">
             <i class="fa-solid fa-circle-xmark x_iconcontact"></i>
-            <h2 class="contact__title">Contacts</h2>
+            <h2 class="contact__title">Contact</h2>
             <div class="contact__container">
                 <div class="contact__content">
                     <form  action="/email_enviado" method="post" class="form__contact">

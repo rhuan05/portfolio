@@ -333,8 +333,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-height: 333px;
-    overflow-y: scroll;
+    /* max-height: 333px; */
+    overflow-y: auto;
 }
 
 .project__content{
@@ -399,6 +399,70 @@ footer{
     background-color: #2A2A2A;
     border-radius: 20px;
   }
+
+.sroll_for_phone{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    transition: .5s;
+}
+
+.arrows_phone{
+    display: none;
+}
+
+@media(max-width: 770px){
+    .img_projeto{
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .img_projeto img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width: 800px){
+    .projects__container{
+        overflow: hidden;
+    }
+    .sroll_for_phone{
+        display: flex;
+        flex-direction: row;
+        width: 300%;
+    }
+    .project__content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+        margin: 12px;
+    }
+    .arrows_phone{
+        color: black;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        margin-top: 140px;
+    }
+    #arrow_left{
+        transform: rotate(90deg);
+        cursor: pointer;
+        margin-left: 16px;
+        font-size: 30px;
+    }
+    #arrow_right{
+        transform: rotate(-90deg);
+        cursor: pointer;
+        margin-right: 16px;
+        font-size: 30px;
+    }
+}
 
 /* Contato */
 
