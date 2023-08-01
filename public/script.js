@@ -73,6 +73,7 @@ function changeForPortuguese(){
     
     document.querySelector('.myProjects__title').innerHTML = 'Meus projetos';
     document.querySelector('.sobremim__title').innerHTML = 'Sobre mim';
+    document.querySelector('.aboutme__text').innerHTML = "Meu nome é Rhuan Henrique, desenvolvo projetos para a internet desde meados de 2020.<br><br>Quando tinha 16 anos me interessei por tecnologia e pelo que eu poderia construir com ela. De 2020 para cá venho estudando e criando algumas coisas (desde boots automatizados com Python a E-commerces com painéis de administrador em NodeJS com MongoDB).<br><br>Sempre penso na resolução do problema e busco não ficar preso a uma linguagem de programação em específico. Mas a linguagem que eu tenho mais experiência, que mais atuei em projetos e que (cá entre nós) eu mais escrevi linhas de código foi JavaScript (e suas vertentes: NodeJS, MongoDB etc).<br><br>Atualmente trabalho na Sinqia, uma empresa que constrói softwares para o sistema financeiro onde trabalhamos com os maiores bancos do Brasil.<br><br>Mas para esse texto ficar curto eu acho melhor parar por aqui.. abaixo deixarei minhas redes caso não queira parar apenas no meu portfólio ;)";
 };
 
 document.querySelector('.english').addEventListener('click', changeForEnglish);
@@ -105,6 +106,7 @@ function changeForEnglish(){
 
     document.querySelector('.sobremim__title').innerHTML = 'About me';
     document.querySelector('.myProjects__title').innerHTML = 'My projects';
+    document.querySelector('.aboutme__text').innerHTML = "My name is Rhuan Henrique, I've been developing projects for the internet since mid-2020.<br><br>When I was 16 I became interested in technology and what I could build with it. Since 2020 I've been studying and creating some things (from automated boots with Python to E-commerces with admin panels in NodeJS with MongoDB).<br><br>I always think about solving the problem and try not to get stuck in a specific programming language. But the language in which I have the most experience, in which I worked the most on projects and which (between us) I wrote the most lines of code was JavaScript (and its branches: NodeJS, MongoDB etc).<br><br>I currently work at Sinqia, a company that builds software for the financial system where we work with the biggest banks in Brazil.<br><br>But for this text to be short, I think it's better to stop here.. I'll leave my networks below if you don't want to stop at my portfolio ;)";
 };
 
 
