@@ -297,7 +297,27 @@ footer{
     color: black;
     width: 80%;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 80px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.medias{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.medias i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.medias i:hover{
+    transform: translateY(-5px);
 }
 
 /* Projetos */
