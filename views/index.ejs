@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section class="main__contact" <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %> style="top: 0vh;" <% } %>>
+    <section class="main__contact" <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '' || send_mail != '') { %> style="top: 0vh;" <% } %>>
         <div class="myContact__container">
             <i class="fa-solid fa-circle-xmark x_iconcontact"></i>
             <h2 class="contact__title">Contact</h2>
@@ -121,6 +121,7 @@
                         <textarea name="text__area" id="text__area" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="btnEnviar">Send</button>
                         <% if(nomeInput != ''|| emailInput != '' || text__areaInput != '') { %><p class="campo__erro_contato">Fill in all fields</p><% } %>
+                        <% if(send_mail != '') { %><p class="email_enviado">Email successfully sent!</p><% } %>
                     </form>
                 </div>
             </div>

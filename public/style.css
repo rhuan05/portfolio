@@ -582,7 +582,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .form__contact input{
@@ -617,6 +617,12 @@ footer{
     margin-top: 6px;
     font-size: 20px;
     text-align: center;
+}
+
+.email_enviado{
+    color: black;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .contact__container{

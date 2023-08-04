@@ -2,23 +2,22 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 exports.paginaInicialHome = (req, res)=>{
-    res.render('index', { nomeInput: '', emailInput: '', text__areaInput: '' });
+    res.render('index', { nomeInput: '', emailInput: '', text__areaInput: '', send_mail: '' });
 };
 
 exports.email_enviado = (req, res)=>{
     const infos = req.body;
 
-    //PAREI AQUI: VALIDANDO OS CAMPOS DO FORMULÁRIO.
     if(!req.body.nome){
-        return res.render('index', { nomeInput: 'on' });
+        return res.render('index', { nomeInput: 'on', emailInput: 'on', text__areaInput: '', send_mail: '' });
     };
 
     if(!req.body.email){
-        return res.render('index', { emailInput: 'on' });
+        return res.render('index', { nomeInput: '', emailInput: 'on', text__areaInput: '', send_mail: '' });
     };
 
     if(!req.body.text__area){
-        return res.render('index', { text__areaInput: 'on' });
+        return res.render('index', {  nomeInput: '', emailInput: '', text__areaInput: 'on', send_mail: '' });
     };
 
     let transporter = nodemailer.createTransport({
@@ -39,5 +38,5 @@ exports.email_enviado = (req, res)=>{
     }).catch(err => {
         console.log('ERRO: ' + err);
     });
-    res.render('E-mail enviado!');
+    res.render('index', { nomeInput: '', emailInput: '', text__areaInput: '', send_mail: 'on' });
 };

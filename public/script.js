@@ -62,6 +62,9 @@ function changeForPortuguese(){
     if(document.querySelector('.campo__erro_contato')){
         document.querySelector('.campo__erro_contato').innerHTML = 'Preencha todos os campos';
     }
+    if(document.querySelector('.email_enviado')){
+        document.querySelector('.email_enviado').innerHTML = 'E-mail enviado com sucesso!';
+    }
     document.querySelector('#p1_about_ebook_project').innerHTML = 'Essa página foi criada com o objetivo de promover um e-book. Onde aconteceria uma campanha, rodando tráfego pago no Facebook ADS apontando para essa página.';
     document.querySelector('#p2_tech_ebook_project').innerHTML = 'Tecnologias usadas: HTML, CSS e JavaScript';
     
