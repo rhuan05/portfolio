@@ -39,5 +39,5 @@ exports.email_enviado = (req, res)=>{
     }).catch(err => {
         console.log('ERRO: ' + err);
     });
-    res.send('E-mail enviado!');
+    res.render('E-mail enviado!');
 };

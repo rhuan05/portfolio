@@ -112,6 +112,7 @@ function changeForEnglish(){
 
 //Funcionalidade do cursor acompanhar o mouse
 let cursorCircle = document.querySelector('.cursorCircle');
+let x_iconaboutme = document.querySelector('.x_iconaboutme');
 
 document.addEventListener('mousemove', (e)=>{
     cursorCircle.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
@@ -121,23 +122,32 @@ document.addEventListener('mousemove', (e)=>{
 let aboutMe_btn = document.querySelector('#aboutMe_btn');
 
 aboutMe_btn.addEventListener('click', ()=>{
-    document.querySelector('.main__aboutme').style.top = '0vh'
-
+    document.querySelector('.main__aboutme').style.top = '0vh';
+    document.querySelector('.cursorCircle').style.background = 'black';
+    document.querySelector('.cursorCircle').style.zIndex = '1';
+    document.querySelectorAll('.icon_media').forEach(e=>{
+        e.style.zIndex = '2';
+    });
+    
     setTimeout(()=>{
         document.querySelector('.sobremim__title').style.transform = 'translateX(0px)';
     }, 1000);
 });
 
 document.querySelector('.x_iconaboutme').addEventListener('click', ()=>{
-    document.querySelector('.main__aboutme').style.top = '100vh'
-    document.querySelector('.sobremim__title').style.transform = 'translateX(-200px)'
+    document.querySelector('.main__aboutme').style.top = '100vh';
+    document.querySelector('.sobremim__title').style.transform = 'translateX(-200px)';
+    document.querySelector('.cursorCircle').style.background = 'white';
+    document.querySelector('.cursorCircle').style.zIndex = '-1';
 });
 
 //Meus projetos
 let myProjects_btn = document.querySelector('#myProjects_btn');
 
 myProjects_btn.addEventListener('click', ()=>{
-    document.querySelector('.main__myProjects').style.top = '0vh'
+    document.querySelector('.main__myProjects').style.top = '0vh';
+    document.querySelector('.cursorCircle').style.background = 'black';
+    document.querySelector('.cursorCircle').style.zIndex = '1';
 
     setTimeout(()=>{
         document.querySelector('.myProjects__title').style.transform = 'translateX(0px)';
@@ -145,15 +155,19 @@ myProjects_btn.addEventListener('click', ()=>{
 });
 
 document.querySelector('.x_iconmyprojects').addEventListener('click', ()=>{
-    document.querySelector('.main__myProjects').style.top = '100vh'
-    document.querySelector('.myProjects__title').style.transform = 'translateX(-200px)'
+    document.querySelector('.main__myProjects').style.top = '100vh';
+    document.querySelector('.myProjects__title').style.transform = 'translateX(-200px)';
+    document.querySelector('.cursorCircle').style.background = 'white';
+    document.querySelector('.cursorCircle').style.zIndex = '-1';
 });
 
 //Contato
 let contacts = document.querySelector('#contacts');
 
 contacts.addEventListener('click', ()=>{
-    document.querySelector('.main__contact').style.top = '0vh'
+    document.querySelector('.main__contact').style.top = '0vh';
+    document.querySelector('.cursorCircle').style.background = 'black';
+    document.querySelector('.cursorCircle').style.zIndex = '1';
 
     setTimeout(()=>{
         document.querySelector('.contact__title').style.transform = 'translateX(0px)';
@@ -170,8 +184,10 @@ if(main__contact.style.top == '0vh'){
 
 
 document.querySelector('.x_iconcontact').addEventListener('click', ()=>{
-    document.querySelector('.main__contact').style.top = '100vh'
-    document.querySelector('.contact__title').style.transform = 'translateX(-200px)'
+    document.querySelector('.main__contact').style.top = '100vh';
+    document.querySelector('.contact__title').style.transform = 'translateX(-200px)';
+    document.querySelector('.cursorCircle').style.background = 'white';
+    document.querySelector('.cursorCircle').style.zIndex = '-1';
 });
 
 //Scroll in phone

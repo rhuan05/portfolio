@@ -281,9 +281,16 @@ footer{
 .x_iconaboutme{
     color: black;
     float: right;
-    margin-right: 20px;
     font-size: 24px;
     cursor: pointer;
+    z-index: 10000;
+}
+
+.x_iconaboutme::before{
+    content: '';
+    z-index: 100;
+    position: absolute;
+    right: 20px;
 }
 
 .sobremim__title{
@@ -340,6 +347,13 @@ footer{
     cursor: pointer;
 }
 
+.x_iconmyprojects::before{
+    content: '';
+    z-index: 100;
+    position: absolute;
+    right: 20px;
+}
+
 .myProjects__title{
     color: black;
     margin: 30px 20px;
@@ -351,14 +365,14 @@ footer{
 .projects__container{
     width: 80%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
     color: black;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    /* max-height: 333px; */
     overflow-y: auto;
+    z-index: 1000;
 }
 
 .project__content{
@@ -370,6 +384,7 @@ footer{
     border-radius: 10px;
     height: 100px;
     background: rgb(225, 225, 225);
+    z-index: 1000;
 }
 
 .project__content:hover{
@@ -536,6 +551,13 @@ footer{
     cursor: pointer;
 }
 
+.x_iconcontact::before{
+    content: '';
+    z-index: 100;
+    position: absolute;
+    right: 20px;
+}
+
 .contact__title{
     color: black;
     margin: 30px 20px;
@@ -595,4 +617,10 @@ footer{
     margin-top: 6px;
     font-size: 20px;
     text-align: center;
+}
+
+.contact__container{
+    position: absolute;
+    width: 100vw;
+    z-index: 100;
 }
