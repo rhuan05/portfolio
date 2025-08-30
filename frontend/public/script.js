@@ -65,6 +65,9 @@ function changeForPortuguese(){
     if(document.querySelector('.email_enviado')){
         document.querySelector('.email_enviado').innerHTML = 'E-mail enviado com sucesso!';
     }
+    document.querySelector('#p1_about_quizQuest_project').innerHTML = 'Um Duolingo para programadores, onde temos 10 perguntas sobre os principais conceitos de JavaScript. Cada pergunta com sua explicação e ao final, um feedback instantâneo e personalizado.';
+    document.querySelector('#p2_tech_quizQuest_project').innerHTML = 'Tecnologias usadas: ReactJS, NodeJS, SQL';
+
     document.querySelector('#p1_about_ebook_project').innerHTML = 'Essa página foi criada com o objetivo de promover um e-book. Onde aconteceria uma campanha, rodando tráfego pago no Facebook ADS apontando para essa página.';
     document.querySelector('#p2_tech_ebook_project').innerHTML = 'Tecnologias usadas: HTML, CSS e JavaScript';
     
@@ -98,6 +101,9 @@ function changeForEnglish(){
     if(document.querySelector('.campo__erro_contato')){
         document.querySelector('.campo__erro_contato').innerHTML = 'Fill in all fields';
     }
+    document.querySelector('#p1_about_quizQuest_project').innerHTML = 'A Duolingo for programmers, featuring 10 questions about key JavaScript concepts. Each question comes with its own explanation, and at the end, you receive instant and personalized feedback.';
+    document.querySelector('#p2_tech_quizQuest_project').innerHTML = 'Technologies used: ReactJS, NodeJS, SQL';
+
     document.querySelector('#p1_about_ebook_project').innerHTML = 'This page was created with the aim of promoting an e-book. Where a campaign would take place, running paid traffic on Facebook ADS pointing to that page.';
     document.querySelector('#p2_tech_ebook_project').innerHTML = 'Technologies used: HTML, CSS and JavaScript';
     
