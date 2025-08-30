@@ -19,7 +19,7 @@ let sobreBtnEnglish = 'about me';
 let projetosBtnEnglish = 'my projects';
 let contatoBtnEnglish = 'contact';
 
-if(localStorage.getItem('language')){
+if (localStorage.getItem('language')){
     let languageSite = localStorage.getItem('language');
     
     if(languageSite == 'portuguese'){
