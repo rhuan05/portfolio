@@ -275,7 +275,7 @@ footer{
     background: white;
     top: 100vh;
     transition: .8s;
-    overflow: visible;
+    overflow-y: auto;
 }
 
 .x_iconaboutme{
@@ -483,7 +483,7 @@ footer{
     .sroll_for_phone{
         display: flex;
         flex-direction: row;
-        width: 300%;
+        width: 400%;
     }
     .project__content {
         width: 90%;
