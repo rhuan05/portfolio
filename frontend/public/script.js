@@ -205,7 +205,7 @@ let sroll_for_phone = document.querySelector('.sroll_for_phone');
 let marginDefault = 0;
 
 arrow_right.addEventListener('click', ()=>{
-    if(marginDefault !== -200){
+    if(marginDefault !== -300){
         marginDefault = marginDefault - 100;
         sroll_for_phone.style.marginLeft = `${marginDefault}%`;
     }else{
